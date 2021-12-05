@@ -38,8 +38,6 @@ public class DayThree extends AbstractSolution {
     }
 
     public int partTwo() {
-        StringBuilder gamma = new StringBuilder();
-        StringBuilder epsilon = new StringBuilder();
         String oxygen = filteredBinaryNumber(input, true);
         String co2 = filteredBinaryNumber(input, false);
         return Integer.parseInt(oxygen, 2) * Integer.parseInt(co2, 2);
